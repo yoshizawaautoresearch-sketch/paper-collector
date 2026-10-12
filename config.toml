@@ -1,0 +1,224 @@
+# =====================================================================
+#  論文新着コレクター 設定ファイル
+#  ・行頭に # を付けるとその行は無効(コメント)になります
+#  ・情報源を止めたいときは enabled = false にします
+#  ・変更したら GitHub 上で保存(Commit)するだけで次回から反映されます
+# =====================================================================
+
+[general]
+# 一覧ページの名前
+title = "論文新着コレクター"
+# 新着を探す期間(日)。実行間隔より長めにしておくと取りこぼしが減ります
+lookback_days = 21
+# 一覧ページに残しておく期間(日)。古いものは自動で削除されます
+keep_days = 90
+# 抄録を何文字まで保存するか
+abstract_max_chars = 700
+
+# ---------------------------------------------------------------------
+# 表示グループ(一覧ページの見出し)
+#   jp      : 日本の機関・日本語論文
+#   japan   : 日本関連の英語論文
+#   ecm     : 計量経済学
+#   global  : 経済・金融ワーキングペーパー全般
+#   journal : 主要学術誌の新着
+# ---------------------------------------------------------------------
+
+# ---------------------------------------------------------------------
+# 目印(フラグ)の判定キーワード  ※正規表現。大文字小文字は区別しません
+# ---------------------------------------------------------------------
+[flags]
+japan_pattern = '''\bjapan|japanese|bank of japan|\bboj\b|\byen\b|\bjgbs?\b|topix|nikkei|tokyo|osaka|prefectur|abenomics|tohoku|hokkaido|kyushu|okinawa|日本|わが国|我が国|都道府県|日銀'''
+# タイトルにこれがあれば「計量」の目印
+econometrics_title_pattern = '''econometric|estimat|identification|inference|instrumental variable|panel data|difference-in-difference|regression discontinuity|synthetic control|local projection|bootstrap|time series|\bvar\b|\bsvar\b|\bgmm\b|forecast|nowcast|causal|treatment effect|machine learning|bayesian|nonparametric|semiparametric|計量|推定|識別|パネル|回帰|因果|時系列|予測|ベイズ'''
+# 抄録にこれが2種類以上出てきたら「計量」の目印
+econometrics_abstract_pattern = '''instrumental variable|difference-in-difference|regression discontinuity|synthetic control|local projection|panel data|structural var|\bsvar\b|\bgmm\b|maximum likelihood|bayesian estimation|nonparametric|semiparametric|bootstrap|event study|machine learning|double machine learning|asymptotic|monte carlo|操作変数|差の差|回帰不連続|パネルデータ|最尤|ベイズ推定'''
+
+# =====================================================================
+#  RSSで取得する情報源
+#  include_title : タイトルがこの正規表現に合うものだけ残す(省略可)
+#  include_tags  : RSSの分類(dc:subject 等)がこれに合うものだけ残す(省略可)
+# =====================================================================
+
+[[rss]]
+name = "日本銀行(WP・日銀レビュー等)"
+group = "jp"
+url = "https://www.boj.or.jp/rss/whatsnew.xml"
+include_title = '''ワーキングペーパー|日銀レビュー|日銀リサーチラボ|調査論文|ディスカッション|金融研究|Working Paper|Review'''
+enabled = true
+
+[[rss]]
+name = "RIETI ディスカッション・ペーパー"
+group = "jp"
+url = "https://www.rieti.go.jp/jp/rss/index.rdf"
+include_tags = '''ディスカッション・ペーパー'''
+enabled = true
+
+[[rss]]
+name = "内閣府 経済社会総合研究所(ESRI)"
+group = "jp"
+url = "https://www.esri.cao.go.jp/rss-jp.xml"
+include_title = '''ディスカッション|Discussion|経済分析|研究|論文|ペーパー'''
+enabled = true
+
+[[rss]]
+name = "金融庁(金融研究センター等)"
+group = "jp"
+url = "https://www.fsa.go.jp/fsaNewsListAll_rss2.xml"
+include_title = '''ディスカッション|金融研究センター|ワーキングペーパー|研究報告'''
+enabled = true
+
+[[rss]]
+name = "NEP 計量経済学 (nep-ecm)"
+group = "ecm"
+url = "https://nep.repec.org/rss/nep-ecm.rss.xml"
+enabled = true
+
+[[rss]]
+name = "NEP 計量時系列 (nep-ets)"
+group = "ecm"
+url = "https://nep.repec.org/rss/nep-ets.rss.xml"
+enabled = true
+
+[[rss]]
+name = "NEP 東南・東アジア (nep-sea)"
+group = "japan"
+url = "https://nep.repec.org/rss/nep-sea.rss.xml"
+enabled = true
+
+[[rss]]
+name = "NEP 金融市場 (nep-fmk)"
+group = "global"
+url = "https://nep.repec.org/rss/nep-fmk.rss.xml"
+enabled = true
+
+[[rss]]
+name = "NEP 金融政策 (nep-mon)"
+group = "global"
+url = "https://nep.repec.org/rss/nep-mon.rss.xml"
+enabled = true
+
+[[rss]]
+name = "NEP 銀行 (nep-ban)"
+group = "global"
+url = "https://nep.repec.org/rss/nep-ban.rss.xml"
+enabled = true
+
+[[rss]]
+name = "NEP コーポレートファイナンス (nep-cfn)"
+group = "global"
+url = "https://nep.repec.org/rss/nep-cfn.rss.xml"
+enabled = true
+
+[[rss]]
+name = "NBER 新着ワーキングペーパー"
+group = "global"
+url = "https://www.nber.org/rss/new.xml"
+enabled = true
+
+# =====================================================================
+#  arXiv(計量経済学 econ.EM など) ※APIで直近の投稿を取得
+# =====================================================================
+[[arxiv]]
+name = "arXiv econ.EM(計量経済学)"
+group = "ecm"
+category = "econ.EM"
+max_results = 100
+enabled = true
+
+[[arxiv]]
+name = "arXiv q-fin.ST(統計的ファイナンス)"
+group = "ecm"
+category = "q-fin.ST"
+max_results = 50
+enabled = false
+
+# =====================================================================
+#  OpenAlex(世界の論文データベース) ※日本関連の英語論文を拾う
+#  filter の書き方: https://help.openalex.org/api/filtering/
+#  topics.field.id:20 = 経済学・計量経済学・ファイナンス分野
+# =====================================================================
+[[openalex]]
+name = "OpenAlex:日本の研究機関の著者を含む論文"
+group = "japan"
+filter = "topics.field.id:20,authorships.countries:jp"
+max_pages = 2
+enabled = true
+
+[[openalex]]
+name = "OpenAlex:タイトル・抄録に Japan を含む論文"
+group = "japan"
+filter = "topics.field.id:20,title_and_abstract.search:japan"
+max_pages = 2
+enabled = true
+
+# =====================================================================
+#  CiNii Research(日本語論文) ※ appid が必要(手順書参照)
+#  q はスペース区切りで AND 検索になります
+# =====================================================================
+[[cinii]]
+name = "CiNii:計量経済"
+group = "jp"
+q = "計量経済"
+enabled = true
+
+[[cinii]]
+name = "CiNii:実証分析 経済"
+group = "jp"
+q = "実証分析 経済"
+enabled = true
+
+[[cinii]]
+name = "CiNii:実証分析 金融"
+group = "jp"
+q = "実証分析 金融"
+enabled = true
+
+[[cinii]]
+name = "CiNii:ファイナンス 実証"
+group = "jp"
+q = "ファイナンス 実証"
+enabled = true
+
+# =====================================================================
+#  主要学術誌の新着(Crossref) ※ ISSN で指定
+# =====================================================================
+[[journal]]
+name = "Econometrica"
+issn = "0012-9682"
+enabled = true
+
+[[journal]]
+name = "Journal of Econometrics"
+issn = "0304-4076"
+enabled = true
+
+[[journal]]
+name = "Journal of Business & Economic Statistics"
+issn = "0735-0015"
+enabled = true
+
+[[journal]]
+name = "Journal of Financial Economics"
+issn = "0304-405X"
+enabled = true
+
+[[journal]]
+name = "Journal of Finance"
+issn = "0022-1082"
+enabled = true
+
+[[journal]]
+name = "Review of Financial Studies"
+issn = "0893-9454"
+enabled = true
+
+[[journal]]
+name = "Japan and the World Economy"
+issn = "0922-1425"
+enabled = true
+
+[[journal]]
+name = "Journal of the Japanese and International Economies"
+issn = "0889-1583"
+enabled = true
