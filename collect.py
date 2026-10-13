@@ -57,14 +57,15 @@ NS = {
 # ---------------------------------------------------------------------------
 # 通信
 # ---------------------------------------------------------------------------
-def http_get(url: str, *, accept: str = "*/*", timeout: int = 40, retries: int = 2) -> bytes:
+def http_get(url: str, *, accept: str = "*/*", timeout: int = 40, retries: int = 2,
+             headers: dict | None = None) -> bytes:
     """URL を取得して bytes を返す。失敗時は例外。"""
     last_err: Exception | None = None
     for attempt in range(retries + 1):
         try:
             req = urllib.request.Request(
                 url,
-                headers={"User-Agent": USER_AGENT, "Accept": accept, "Accept-Encoding": "gzip"},
+                headers={"User-Agent": USER_AGENT, "Accept": accept, "Accept-Encoding": "gzip", **(headers or {})},
             )
             with urllib.request.urlopen(req, timeout=timeout) as resp:
                 body = resp.read()
@@ -81,8 +82,8 @@ def http_get(url: str, *, accept: str = "*/*", timeout: int = 40, retries: int =
     raise RuntimeError(f"{type(last_err).__name__}: {last_err}")
 
 
-def http_get_json(url: str) -> dict:
-    return json.loads(http_get(url, accept="application/json").decode("utf-8"))
+def http_get_json(url: str, headers: dict | None = None) -> dict:
+    return json.loads(http_get(url, accept="application/json", headers=headers).decode("utf-8"))
 
 
 # ---------------------------------------------------------------------------
@@ -297,15 +298,15 @@ def fetch_openalex(src: dict, ctx: dict) -> list[dict]:
         "sort": "publication_date:desc",
         "select": "id,doi,title,display_name,authorships,publication_date,primary_location,abstract_inverted_index,type",
     }
-    if ctx.get("openalex_key"):
-        params["api_key"] = ctx["openalex_key"]
+    # APIキーはURLに載せず、ヘッダーで送る(ログや記録に残らないようにするため)
+    auth = {"Authorization": f"Bearer {ctx['openalex_key']}"} if ctx.get("openalex_key") else None
     if ctx.get("email"):
         params["mailto"] = ctx["email"]
     out = []
     cursor = "*"
     for _ in range(int(src.get("max_pages", 2))):
         params["cursor"] = cursor
-        data = http_get_json("https://api.openalex.org/works?" + urllib.parse.urlencode(params))
+        data = http_get_json("https://api.openalex.org/works?" + urllib.parse.urlencode(params), headers=auth)
         for w in data.get("results", []):
             title = w.get("title") or w.get("display_name") or ""
             if not title:
@@ -505,6 +506,15 @@ def render_page(cfg: dict, papers: list[dict], runs: list[dict]) -> str:
             .replace("__DATA__", data_json))
 
 
+def redact(text: str, ctx: dict) -> str:
+    """エラーメッセージにAPIキー等が含まれていても、公開ファイルに残らないよう伏せ字にする。"""
+    for k in ("openalex_key", "cinii_appid", "email"):
+        v = ctx.get(k)
+        if v:
+            text = text.replace(v, "***")
+    return re.sub(r"(api_key|appid|mailto)=[^&\s]+", r"\1=***", text)
+
+
 # ---------------------------------------------------------------------------
 # メイン
 # ---------------------------------------------------------------------------
@@ -545,8 +555,9 @@ def main() -> int:
                 run["counts"][name] = len(recs)
                 print(f"[ok]   {name}: {len(recs)} 件", flush=True)
             except Exception as e:  # noqa: BLE001
-                run["errors"][name] = str(e)
-                print(f"[skip] {name}: {e}", flush=True)
+                msg = redact(str(e), ctx)
+                run["errors"][name] = msg
+                print(f"[skip] {name}: {msg}", flush=True)
                 continue
             for rec in recs:
                 if not rec["title"]:
