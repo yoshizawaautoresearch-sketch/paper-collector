@@ -8621,10 +8621,10 @@
    ],
    "countries": [],
    "tags": [
-    "stat.ME",
     "econ.EM",
     "math.PR",
-    "math.ST"
+    "math.ST",
+    "stat.ME"
    ],
    "first_seen": "2026-10-12",
    "japan": false,
@@ -8781,8 +8781,8 @@
    ],
    "countries": [],
    "tags": [
-    "math.ST",
     "econ.EM",
+    "math.ST",
     "stat.ME"
    ],
    "first_seen": "2026-10-12",
@@ -8809,8 +8809,8 @@
    ],
    "countries": [],
    "tags": [
-    "econ.EM",
     "cond-mat.stat-mech",
+    "econ.EM",
     "physics.data-an",
     "q-fin.ST"
    ],
@@ -8865,8 +8865,8 @@
    ],
    "countries": [],
    "tags": [
-    "stat.ME",
     "econ.EM",
+    "stat.ME",
     "stat.ML"
    ],
    "first_seen": "2026-10-12",
@@ -9056,8 +9056,8 @@
    ],
    "countries": [],
    "tags": [
-    "q-fin.TR",
-    "econ.EM"
+    "econ.EM",
+    "q-fin.TR"
    ],
    "first_seen": "2026-10-12",
    "japan": false,
@@ -9110,8 +9110,8 @@
    ],
    "countries": [],
    "tags": [
-    "stat.ME",
-    "econ.EM"
+    "econ.EM",
+    "stat.ME"
    ],
    "first_seen": "2026-10-12",
    "japan": false,
@@ -9140,9 +9140,9 @@
    ],
    "countries": [],
    "tags": [
-    "stat.ME",
     "cs.LG",
-    "econ.EM"
+    "econ.EM",
+    "stat.ME"
    ],
    "first_seen": "2026-10-12",
    "japan": false,
@@ -9167,8 +9167,8 @@
    ],
    "countries": [],
    "tags": [
-    "stat.ME",
-    "econ.EM"
+    "econ.EM",
+    "stat.ME"
    ],
    "first_seen": "2026-10-12",
    "japan": false,
@@ -9197,8 +9197,8 @@
    ],
    "countries": [],
    "tags": [
-    "math.ST",
     "econ.EM",
+    "math.ST",
     "stat.ME"
    ],
    "first_seen": "2026-10-12",
@@ -9499,9 +9499,9 @@
    ],
    "countries": [],
    "tags": [
-    "stat.ME",
     "econ.EM",
-    "stat.AP"
+    "stat.AP",
+    "stat.ME"
    ],
    "first_seen": "2026-10-12",
    "japan": false,
@@ -9667,8 +9667,8 @@
    ],
    "countries": [],
    "tags": [
-    "math.ST",
-    "econ.EM"
+    "econ.EM",
+    "math.ST"
    ],
    "first_seen": "2026-10-12",
    "japan": false,
@@ -9801,9 +9801,9 @@
    ],
    "countries": [],
    "tags": [
-    "stat.ME",
     "econ.EM",
-    "stat.AP"
+    "stat.AP",
+    "stat.ME"
    ],
    "first_seen": "2026-10-12",
    "japan": false,
@@ -9853,8 +9853,8 @@
    ],
    "countries": [],
    "tags": [
-    "econ.EM",
     "cs.GT",
+    "econ.EM",
     "q-fin.GN",
     "q-fin.TR"
    ],
@@ -9935,8 +9935,8 @@
    ],
    "countries": [],
    "tags": [
-    "math.ST",
     "econ.EM",
+    "math.ST",
     "stat.ME"
    ],
    "first_seen": "2026-10-12",
@@ -10042,9 +10042,9 @@
    ],
    "countries": [],
    "tags": [
-    "stat.ME",
     "econ.EM",
-    "stat.AP"
+    "stat.AP",
+    "stat.ME"
    ],
    "first_seen": "2026-10-12",
    "japan": false,
@@ -10146,10 +10146,10 @@
    ],
    "countries": [],
    "tags": [
-    "econ.EM",
     "cs.GT",
     "cs.LG",
     "cs.MA",
+    "econ.EM",
     "econ.TH"
    ],
    "first_seen": "2026-10-12",
@@ -10175,8 +10175,8 @@
    ],
    "countries": [],
    "tags": [
-    "stat.ME",
-    "econ.EM"
+    "econ.EM",
+    "stat.ME"
    ],
    "first_seen": "2026-10-12",
    "japan": false,
@@ -10253,9 +10253,9 @@
    ],
    "countries": [],
    "tags": [
-    "stat.ME",
     "econ.EM",
-    "stat.AP"
+    "stat.AP",
+    "stat.ME"
    ],
    "first_seen": "2026-10-12",
    "japan": false,
@@ -20642,6 +20642,428 @@
    "japan": false,
    "econometrics": false,
    "lang": "en"
+  },
+  "arxiv:2610.18387": {
+   "title": "Risk Measures for the Climate Transition Age: Why Symmetric Risk Budgets are unlikely to mitigate two-dimensionally asymmetric Climate Change risks",
+   "url": "https://arxiv.org/abs/2610.18387",
+   "authors": [
+    "Lars Dijkstra",
+    "Andreas G. F. Hoepner",
+    "Fabiola I. Schneider",
+    "Agnieszka Słomka-Gołębiowska"
+   ],
+   "date": "2026-10-13",
+   "abstract": "The most widely used investment risk measures - variance, standard deviation, and tracking error - treat upside deviations as equally undesirable as downside losses. In stable markets with assumed symmetric return distributions, this simplification is potentially harmless. In the climate transition age, it is not. Climate risk is two-dimensionally asymmetric, across assets and over time. Both dimensions are negatively skewed against investors. Hence, climate transition investment strategies deliberately deviate from benchmarks that reflect an insufficiently decarbonising global economy. When fiduciaries enforce tracking error budgets that penalise outperformance just as heavily as underperfo",
+   "doi": "",
+   "venue": "arXiv econ.EM",
+   "sources": [
+    "arXiv econ.EM(計量経済学)"
+   ],
+   "groups": [
+    "ecm"
+   ],
+   "countries": [],
+   "tags": [
+    "q-fin.RM",
+    "econ.EM",
+    "q-fin.PM",
+    "stat.ME"
+   ],
+   "first_seen": "2026-10-15",
+   "japan": false,
+   "econometrics": true,
+   "lang": "en"
+  },
+  "arxiv:2610.17104": {
+   "title": "Dynamic Panel Multinomial Logit Models",
+   "url": "https://arxiv.org/abs/2610.17104",
+   "authors": [
+    "Kevin Dano",
+    "Bo E. Honoré",
+    "Martin Weidner"
+   ],
+   "date": "2026-10-12",
+   "abstract": "This paper provides moment conditions for dynamic multinomial logit panel data models with individual specific fixed effects. The moment conditions do not depend on the fixed effects and thus form the basis for generalized method of moments estimation. For a leading case, we provide sufficient conditions under which the moment conditions identify the common parameters, and we illustrate their use in an empirical application to household soft drink purchases. The construction of moment conditions is based on transformed models obtained by permuting outcomes across time periods. For any cyclic permutation, the ratio of the transformed model probability to the true model probability is free of ",
+   "doi": "",
+   "venue": "arXiv econ.EM",
+   "sources": [
+    "arXiv econ.EM(計量経済学)"
+   ],
+   "groups": [
+    "ecm"
+   ],
+   "countries": [],
+   "tags": [
+    "econ.EM"
+   ],
+   "first_seen": "2026-10-15",
+   "japan": false,
+   "econometrics": true,
+   "lang": "en"
+  },
+  "arxiv:2610.16754": {
+   "title": "Pseudo-Panel Event Studies: Econometric Foundations for Credible Applications",
+   "url": "https://arxiv.org/abs/2610.16754",
+   "authors": [
+    "Dongwoo Kim"
+   ],
+   "date": "2026-10-12",
+   "abstract": "Event studies with panel data are widely used to estimate treatment effects. With repeated cross-sections, future treatment dates are unobserved for untreated individuals. Pseudo-panel event studies impute pre-treatment outcomes of the treated using matched untreated individuals. This paper establishes identification in such designs and characterizes bias when identification conditions fail. I show that the pseudo-panel regression is equivalent to weighted least squares with group means. This representation simplifies computation and yields analytical inference. In simulations, analytical confidence intervals attain near-nominal coverage, whereas conventional intervals substantially undercov",
+   "doi": "",
+   "venue": "arXiv econ.EM",
+   "sources": [
+    "arXiv econ.EM(計量経済学)"
+   ],
+   "groups": [
+    "ecm"
+   ],
+   "countries": [],
+   "tags": [
+    "econ.EM"
+   ],
+   "first_seen": "2026-10-15",
+   "japan": false,
+   "econometrics": true,
+   "lang": "en"
+  },
+  "arxiv:2610.16701": {
+   "title": "Estimation of Rational Inattention--Additive Random Utility Models",
+   "url": "https://arxiv.org/abs/2610.16701",
+   "authors": [
+    "Ruolei Zhu"
+   ],
+   "date": "2026-10-12",
+   "abstract": "This paper develops likelihood-based estimation for parametric rational inattention--additive random utility models. We establish consistency and asymptotic normality of the exact maximum likelihood estimator and provide conditions under which the simulated estimator shares its asymptotic distribution. To implement estimation, we develop Newton--BA, a KKT-guided hybrid of Newton--Raphson and Blahut--Arimoto (BA). The algorithm accommodates both interior and boundary solutions and substantially improves computational efficiency relative to direct BA while preserving numerical accuracy. Monte Carlo simulations show that parameter recovery improves with sample size and that confidence-interval ",
+   "doi": "",
+   "venue": "arXiv econ.EM",
+   "sources": [
+    "arXiv econ.EM(計量経済学)"
+   ],
+   "groups": [
+    "ecm"
+   ],
+   "countries": [],
+   "tags": [
+    "econ.EM"
+   ],
+   "first_seen": "2026-10-15",
+   "japan": false,
+   "econometrics": true,
+   "lang": "en"
+  },
+  "arxiv:2610.16503": {
+   "title": "Honest Inference for High-Dimensional Linear Models",
+   "url": "https://arxiv.org/abs/2610.16503",
+   "authors": [
+    "Dennis Lim",
+    "Pengjin Min",
+    "Jonathan H. W. Tan",
+    "Jiezheng Wei"
+   ],
+   "date": "2026-10-12",
+   "abstract": "We propose a heteroskedasticity-robust and dimention-adaptive test for multiple linear restric- tions in sparse high-dimensional linear regression models. It combines desparsified LASSO estimation with a ridge-regularized quadratic form statistic and critical values that adapt to the restriction dimension. Under stated regularity conditions, our approach is asymptotically valid under a fixed or diverging number of restrictions without specifying the asymptotic regime in advance. Our random-design theory allows independent non-identically distributed covari- ate rows with marginal sub-Weibull tails and heteroskedastic errors satisfying finite polynomial moments. Monte Carlo simulations demons",
+   "doi": "",
+   "venue": "arXiv econ.EM",
+   "sources": [
+    "arXiv econ.EM(計量経済学)"
+   ],
+   "groups": [
+    "ecm"
+   ],
+   "countries": [],
+   "tags": [
+    "stat.ME",
+    "econ.EM"
+   ],
+   "first_seen": "2026-10-15",
+   "japan": false,
+   "econometrics": true,
+   "lang": "en"
+  },
+  "arxiv:2610.15789": {
+   "title": "Inference on the Value of Policy Improvement in Adaptive Experiments",
+   "url": "https://arxiv.org/abs/2610.15789",
+   "authors": [
+    "Justin Whitehouse",
+    "Emma Brunskill",
+    "Vasilis Syrgkanis"
+   ],
+   "date": "2026-10-11",
+   "abstract": "In this paper, we develop an asymptotically normal estimator for the value of policy improvement (VPI) under adaptively collected data. This value, which is defined as the gap between the value of the best treatment policy in a class and that of a baseline policy, gauges whether or not it is worth deploying a personalized treatment policy. Building an estimator for the VPI is naturally more difficult than estimating the value of a fixed policy. This is because, in addition to contending with the correlated data and decaying propensities associated with adaptive experiments, any estimator must also handle the non-regularity, or lack of pathwise differentiability, of the underlying estimand wh",
+   "doi": "",
+   "venue": "arXiv econ.EM",
+   "sources": [
+    "arXiv econ.EM(計量経済学)"
+   ],
+   "groups": [
+    "ecm"
+   ],
+   "countries": [],
+   "tags": [
+    "stat.ML",
+    "cs.LG",
+    "econ.EM",
+    "math.ST"
+   ],
+   "first_seen": "2026-10-15",
+   "japan": false,
+   "econometrics": true,
+   "lang": "en"
+  },
+  "arxiv:2610.15672": {
+   "title": "Uncertainty in Compound Decisions",
+   "url": "https://arxiv.org/abs/2610.15672",
+   "authors": [
+    "Andreas Petrou-Zeniou"
+   ],
+   "date": "2026-10-11",
+   "abstract": "Researchers and policymakers frequently make a large number of decisions simultaneously over many units using noisy estimates of unit-level effects. Researchers often assume that unit-level effects are drawn from a common effect distribution, allowing for optimal decision-making. In applications, however, this effect distribution is unknown to the econometrician, introducing uncertainty in the ultimate decision-making problem. This paper considers the problem of quantifying this uncertainty. For instance, researchers may seek to understand how an oracle decision maker with knowledge of the effect distribution would compare different feasible decisions, or understand which decisions an oracle",
+   "doi": "",
+   "venue": "arXiv econ.EM",
+   "sources": [
+    "arXiv econ.EM(計量経済学)"
+   ],
+   "groups": [
+    "ecm"
+   ],
+   "countries": [],
+   "tags": [
+    "econ.EM"
+   ],
+   "first_seen": "2026-10-15",
+   "japan": false,
+   "econometrics": true,
+   "lang": "en"
+  },
+  "arxiv:2610.15296": {
+   "title": "Recurrent Neural Networks for Forecasting Autoregressive Noncausal Processes",
+   "url": "https://arxiv.org/abs/2610.15296",
+   "authors": [
+    "Joann Jasiak",
+    "Cheng Zhong"
+   ],
+   "date": "2026-10-11",
+   "abstract": "This paper examines the use of recurrent neural networks and their extensions for forecasting autoregressive causal-noncausal processes, characterized by local explosive patterns such as bubbles and spikes. We study the recurrent neural networks (RNN), long short-term memory networks (LSTM), gated recurrent unit (GRU), bidirectional LSTM, and also a simple feed-forward network (FNN) to reveal the difficulty of forecasting extreme values depending on the type of network and the length of the training set. We show that FNN outperforms other networks in predicting extreme values of a univariate noncausal time series during a bubble. We also examine the improvements of point predictions of extre",
+   "doi": "",
+   "venue": "arXiv econ.EM",
+   "sources": [
+    "arXiv econ.EM(計量経済学)"
+   ],
+   "groups": [
+    "ecm"
+   ],
+   "countries": [],
+   "tags": [
+    "econ.EM"
+   ],
+   "first_seen": "2026-10-15",
+   "japan": false,
+   "econometrics": true,
+   "lang": "en"
+  },
+  "arxiv:2610.15168": {
+   "title": "GMM under finite-population asymptotics: instrumental variables and regression adjustment",
+   "url": "https://arxiv.org/abs/2610.15168",
+   "authors": [
+    "Haruo Kakehi",
+    "Yukitoshi Matsushita",
+    "Taisuke Otsu"
+   ],
+   "date": "2026-10-10",
+   "abstract": "This paper extends the finite-population asymptotic framework of Abadie et al. (2014,2020) to the generalized method of moments (GMM) estimator for moment condition models. Motivating examples include instrumental variable regressions and regression adjustments under randomized controlled trials. We establish consistency and asymptotic normality of the GMM estimator and propose conservative variance estimators. We also study GMM weighting, misspecification, and over-identification testing under finite-population asymptotics. Notably, even though the optimally weighted GMM estimator is infeasible under finite-population asymptotics, the regression adjustment estimator in a randomized controll",
+   "doi": "",
+   "venue": "arXiv econ.EM",
+   "sources": [
+    "arXiv econ.EM(計量経済学)"
+   ],
+   "groups": [
+    "ecm"
+   ],
+   "countries": [],
+   "tags": [
+    "econ.EM"
+   ],
+   "first_seen": "2026-10-15",
+   "japan": false,
+   "econometrics": true,
+   "lang": "en"
+  },
+  "arxiv:2610.15063": {
+   "title": "Randomized Experiments with Ambiguous Record Linkage",
+   "url": "https://arxiv.org/abs/2610.15063",
+   "authors": [
+    "Bruno Ferman",
+    "Lucas Finamor"
+   ],
+   "date": "2026-10-10",
+   "abstract": "Randomized experiments are often linked to administrative data to measure outcomes, but coarse identifiers can leave multiple administrative records consistent with each experimental unit. We show that unbiased estimation of the sample average treatment effect is possible without resolving these ambiguous links or specifying an outcome model. Our key linkage requirement is that the true administrative outcome is contained among the candidate outcomes for each experimental unit. We characterize the precision cost of linkage ambiguity and study two complementary ways to mitigate it: regression adjustment and reweighting based on observed linkage characteristics. We establish finite-sample and ",
+   "doi": "",
+   "venue": "arXiv econ.EM",
+   "sources": [
+    "arXiv econ.EM(計量経済学)"
+   ],
+   "groups": [
+    "ecm"
+   ],
+   "countries": [],
+   "tags": [
+    "econ.EM"
+   ],
+   "first_seen": "2026-10-15",
+   "japan": false,
+   "econometrics": true,
+   "lang": "en"
+  },
+  "arxiv:2610.14511": {
+   "title": "A Balanced Parametrization of Correlation Matrices",
+   "url": "https://arxiv.org/abs/2610.14511",
+   "authors": [
+    "Peter Reinhard Hansen",
+    "Chen Tong"
+   ],
+   "date": "2026-10-10",
+   "abstract": "We introduce the balanced correlation parametrization (BCP), which maps positive-definite correlation matrices one-to-one onto the set of symmetric hollow matrices. A key feature of the parametrization is that both the transformation and its inverse are available in closed form. It combines marginal and partial correlations, is inverse-consistent and equivariant under variable permutations and sign changes, and preserves block structure. A novel property of BCP is that it preserves correlation sparsity as the dimension tends to infinity under suitable factor conditions, providing a basis for sparse high-dimensional correlation modeling. An empirical illustration using standardized idiosyncra",
+   "doi": "",
+   "venue": "arXiv econ.EM",
+   "sources": [
+    "arXiv econ.EM(計量経済学)"
+   ],
+   "groups": [
+    "ecm"
+   ],
+   "countries": [],
+   "tags": [
+    "econ.EM"
+   ],
+   "first_seen": "2026-10-15",
+   "japan": false,
+   "econometrics": true,
+   "lang": "en"
+  },
+  "doi:10.1080/07350015.2026.2743244": {
+   "title": "The Efficiency vs. Pricing Accuracy Trade-Off in GMM Estimation of Multifactor Linear Asset Pricing Models",
+   "url": "https://doi.org/10.1080/07350015.2026.2743244",
+   "authors": [
+    "Juan Arismendi-Zambrano",
+    "Massimo Guidolin",
+    "Martin Lozano"
+   ],
+   "date": "2026-10-14",
+   "abstract": "",
+   "doi": "10.1080/07350015.2026.2743244",
+   "venue": "Journal of Business & Economic Statistics",
+   "sources": [
+    "Journal of Business & Economic Statistics"
+   ],
+   "groups": [
+    "journal"
+   ],
+   "countries": [],
+   "tags": [],
+   "first_seen": "2026-10-15",
+   "japan": false,
+   "econometrics": true,
+   "lang": "en"
+  },
+  "doi:10.1016/j.jfineco.2026.104379": {
+   "title": "Disagreement of disagreement",
+   "url": "https://doi.org/10.1016/j.jfineco.2026.104379",
+   "authors": [
+    "Christian L. Goulding",
+    "Campbell R. Harvey",
+    "Hrvoje Kurtović"
+   ],
+   "date": "2026-11-01",
+   "abstract": "",
+   "doi": "10.1016/j.jfineco.2026.104379",
+   "venue": "Journal of Financial Economics",
+   "sources": [
+    "Journal of Financial Economics"
+   ],
+   "groups": [
+    "journal"
+   ],
+   "countries": [],
+   "tags": [],
+   "first_seen": "2026-10-15",
+   "japan": false,
+   "econometrics": false,
+   "lang": "en"
+  },
+  "doi:10.1016/j.jfineco.2026.104377": {
+   "title": "Charitable capital allocation: Evidence from private foundations",
+   "url": "https://doi.org/10.1016/j.jfineco.2026.104377",
+   "authors": [
+    "Zhongjin (Gene) Lu",
+    "Steven Malliaris"
+   ],
+   "date": "2026-11-01",
+   "abstract": "",
+   "doi": "10.1016/j.jfineco.2026.104377",
+   "venue": "Journal of Financial Economics",
+   "sources": [
+    "Journal of Financial Economics"
+   ],
+   "groups": [
+    "journal"
+   ],
+   "countries": [],
+   "tags": [],
+   "first_seen": "2026-10-15",
+   "japan": false,
+   "econometrics": false,
+   "lang": "en"
+  },
+  "doi:10.1111/jofi.70082": {
+   "title": "Externalities of Responsible Investments",
+   "url": "https://doi.org/10.1111/jofi.70082",
+   "authors": [
+    "MICHELE BISCEGLIA",
+    "ALESSIO PICCOLO",
+    "JAN SCHNEEMEIER"
+   ],
+   "date": "2026-10-14",
+   "abstract": "ABSTRACT We develop a model to study the efficiency of socially responsible investing (SRI) as a mechanism to control firms' externalities. When SRI is not too popular, responsible investors favor strategies that lead to a concentration of SRI in a subset of firms in the economy. This concentration can mitigate coordination issues in adopting green technologies, but it can also crowd out the green investments of excluded firms and increase the price of green products. In equilibrium, responsible investors continue to favor concentration even as SRI becomes more popular, and concentrate the most when concentration is least desirable.",
+   "doi": "10.1111/jofi.70082",
+   "venue": "The Journal of Finance",
+   "sources": [
+    "Journal of Finance"
+   ],
+   "groups": [
+    "journal"
+   ],
+   "countries": [],
+   "tags": [],
+   "first_seen": "2026-10-15",
+   "japan": false,
+   "econometrics": false,
+   "lang": "en"
+  },
+  "doi:10.1111/jofi.70095": {
+   "title": "Risk, Specialization, and Covered‐Interest Parity",
+   "url": "https://doi.org/10.1111/jofi.70095",
+   "authors": [
+    "TOBIAS J. MOSKOWITZ",
+    "CHASE P. ROSS",
+    "SHARON Y. ROSS",
+    "KAUSHIK VASUDEVAN"
+   ],
+   "date": "2026-10-13",
+   "abstract": "ABSTRACT Prevailing theories of financial intermediation assume an integrated financial sector with frictionless risk‐sharing. However, we identify substantial risk‐sharing frictions linked to intermediary specialization using currency derivatives markets as a laboratory. Using confidential supervisory data covering $25 trillion in daily bank exposures, we document imperfect hedging in banks' FX‐swap intermediation: banks rarely hedge their synthetic dollar lending with maturity‐matched foreign safe assets. Intermediaries specialize in markets in which they have expertise in managing the associated exposures, giving rise to cross‐market variation in deviations from covered‐interest parity. O",
+   "doi": "10.1111/jofi.70095",
+   "venue": "The Journal of Finance",
+   "sources": [
+    "Journal of Finance"
+   ],
+   "groups": [
+    "journal"
+   ],
+   "countries": [],
+   "tags": [],
+   "first_seen": "2026-10-15",
+   "japan": false,
+   "econometrics": false,
+   "lang": "en"
   }
  },
  "runs": [
@@ -20679,6 +21101,41 @@
     "CiNii:ファイナンス 実証": "CINII_APPID が未設定のため省略しました(手順書のステップ5参照)"
    },
    "new": 782
+  },
+  {
+   "date": "2026-10-15 07:09",
+   "counts": {
+    "日本銀行(WP・日銀レビュー等)": 3,
+    "RIETI ディスカッション・ペーパー": 174,
+    "内閣府 経済社会総合研究所(ESRI)": 0,
+    "金融庁(金融研究センター等)": 0,
+    "NEP 計量経済学 (nep-ecm)": 28,
+    "NEP 計量時系列 (nep-ets)": 11,
+    "NEP 東南・東アジア (nep-sea)": 13,
+    "NEP 金融市場 (nep-fmk)": 10,
+    "NEP 金融政策 (nep-mon)": 39,
+    "NEP 銀行 (nep-ban)": 20,
+    "NEP コーポレートファイナンス (nep-cfn)": 5,
+    "NBER 新着ワーキングペーパー": 22,
+    "arXiv econ.EM(計量経済学)": 80,
+    "Econometrica": 0,
+    "Journal of Econometrics": 5,
+    "Journal of Business & Economic Statistics": 3,
+    "Journal of Financial Economics": 9,
+    "Journal of Finance": 14,
+    "Review of Financial Studies": 2,
+    "Japan and the World Economy": 0,
+    "Journal of the Japanese and International Economies": 0
+   },
+   "errors": {
+    "OpenAlex:日本の研究機関の著者を含む論文": "HTTPError: HTTP Error 401: Unauthorized",
+    "OpenAlex:タイトル・抄録に Japan を含む論文": "HTTPError: HTTP Error 401: Unauthorized",
+    "CiNii:計量経済": "CINII_APPID が未設定のため省略しました(手順書のステップ5参照)",
+    "CiNii:実証分析 経済": "CINII_APPID が未設定のため省略しました(手順書のステップ5参照)",
+    "CiNii:実証分析 金融": "CINII_APPID が未設定のため省略しました(手順書のステップ5参照)",
+    "CiNii:ファイナンス 実証": "CINII_APPID が未設定のため省略しました(手順書のステップ5参照)"
+   },
+   "new": 16
   }
  ]
 }
